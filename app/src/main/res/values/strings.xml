@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shimul Project</string>
+    <string name="select_district">Select District From Here..</string>
+    <string name="select_school">Select School From Here..</string>
+    <string name="write_comment">Write Comment Here..</string>
+    <string name="submit">Submit</string>
+</resources>
