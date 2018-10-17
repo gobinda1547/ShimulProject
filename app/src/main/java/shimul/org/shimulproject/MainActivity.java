@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Toast.makeText(getApplicationContext(),message,
-                        Toast.LENGTH_LONG).show();
+                        Toast.LENGTH_LONG).show(); 
             }
         });
     }
