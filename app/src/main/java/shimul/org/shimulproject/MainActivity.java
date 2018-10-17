@@ -80,8 +80,8 @@ public class MainActivity extends AppCompatActivity {
 
                 for (int i = 0; i < contacts.length(); i++) {
                     JSONObject c = contacts.getJSONObject(i);
-                    String district = c.getString("district");
-                    String school = c.getString("school");
+                    String district = c.getString("name");
+                    String school = c.getString("email");
                     customDataList.add(new CustomData(district,school));
                 }
             } catch (final JSONException e) {
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                 String currentDistrict = customDataList.get(i).getDistrict();
                 boolean alreadyHave = false;
                 for(int j=0;j<onlyDistricts.size();j++){
-                    if(onlyDistricts.get(i).equals(currentDistrict)){
+                    if(onlyDistricts.get(j).equals(currentDistrict)){
                         alreadyHave = true;
                         break;
                     }
